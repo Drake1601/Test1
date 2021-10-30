@@ -11,8 +11,10 @@ public class Main extends Application {
 	public void start(Stage primaryStage) {
 		try {
 			primaryStage.setTitle("Display");
+            
 			BorderPane root = new BorderPane();
-			Scene scene = new Scene(root,400,400);
+			root.setBackground(null);
+			Scene scene = new Scene(root,460,460);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);
 			primaryStage.show();
