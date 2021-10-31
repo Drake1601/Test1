@@ -1,7 +1,9 @@
 package application;
 	
 import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
@@ -11,11 +13,10 @@ public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 		try {
-			primaryStage.setTitle("Display");
-            
-			AnchorPane root = new AnchorPane();
-			root.setBackground(null);
-			Scene scene = new Scene(root,460,460);
+			primaryStage.setTitle("LOGIN");
+			Parent root = FXMLLoader.load(getClass().getResource("/application/Login.fxml"));
+			
+			Scene scene = new Scene(root,670,600);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);
 			primaryStage.show();
