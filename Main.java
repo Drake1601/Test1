@@ -3,6 +3,7 @@ package application;
 import javafx.application.Application;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 
 
@@ -12,7 +13,7 @@ public class Main extends Application {
 		try {
 			primaryStage.setTitle("Display");
             
-			BorderPane root = new BorderPane();
+			AnchorPane root = new AnchorPane();
 			root.setBackground(null);
 			Scene scene = new Scene(root,460,460);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
