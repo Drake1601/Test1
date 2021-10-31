@@ -10,6 +10,8 @@ import javafx.scene.layout.BorderPane;
 
 
 public class Main extends Application {
+	
+	static double a=10.0;
 	@Override
 	public void start(Stage primaryStage) {
 		try {
@@ -27,5 +29,6 @@ public class Main extends Application {
 	
 	public static void main(String[] args) {
 		launch(args);
+		System.out.println(a);
 	}
 }
